@@ -11,5 +11,7 @@ namespace Nap.Html.Bindings.Base
         /// Gets the type of binding that this handler operates on.
         /// </summary>
         NapHtmlBinding Binding { get; }
+
+        string GetContent()
     }
 }

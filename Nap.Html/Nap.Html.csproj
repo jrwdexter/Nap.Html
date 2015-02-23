@@ -34,7 +34,7 @@
       <HintPath>..\packages\Fizzler.1.0.0\lib\net35\Fizzler.dll</HintPath>
     </Reference>
     <Reference Include="Nap">
-      <HintPath>..\packages\Nap.0.0.2.1\lib\portable-net45+win+wpa81\Nap.dll</HintPath>
+      <HintPath>..\packages\Nap.0.0.2.2\lib\portable-net45+win+wpa81\Nap.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -49,11 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Attributes\NapHtmlBinding.cs" />
+    <Compile Include="Attributes\NapHtmlSelectorAttribute.cs" />
+    <Compile Include="Bindings\Base\IHtmlBinding.cs" />
+    <Compile Include="NapHtmlFormatter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Handlers\Base\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
